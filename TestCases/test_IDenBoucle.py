@@ -75,14 +75,14 @@ class Test_001_Login:
                     lst_status.append("pass")
                     # assert True
                 elif self.exp == "fail":                   
-                    self.logger.info("***************** Fail KO ****************")
+                    self.logger.error("***************** Fail KO ****************")
                     lst_status.append("fail")
                     self.driver.save_screenshot("./screenshot/page_title_0.png")
                     XLUtils.writeData(self.path,"Feuil1",nb,6,"FAIL")
                     self.driver.refresh()
             elif act_title != exp_title:
                 if self.exp == "pass":
-                    self.logger.info("***************** Fail KO ****************")
+                    self.logger.error("***************** Fail KO ****************")
                     XLUtils.writeData(self.path,"Feuil1",nb,6,"FAIL")
                     lst_status.append("fail")
                     self.driver.save_screenshot("./screenshot/page_title_0.png")
@@ -93,21 +93,23 @@ class Test_001_Login:
                     XLUtils.writeData(self.path,"Feuil1",nb,6,"PASS")
                     self.driver.refresh()
         print("L'état d'exécution des ID : ",lst_status)
-        if "fail" not in lst_status:
-            self.logger.info("***************** TOUT BA BENNE ****************")
-            assert True
-        else :
-            self.logger.error("***************** ko total ****************")
-            # self.driver.close()
-            "-------------Approfondis la possiblité d'utiliser un vérif au lieu de assert ------------"
-            assert False
+        # if "fail" not in lst_status:
+        #     self.logger.info("***************** TOUT BA BENNE ****************")
+        #     assert True 
+        # else :
+        #     self.logger.error("***************** ko total ****************")
+        #     # self.driver.close()
+        #     "-------------Approfondis la possiblité d'utiliser un vérif au lieu de assert ------------"
+        #     assert False
+        assert "fail" not in lst_status, "ERREUR"
         time.sleep(2)
         self.logger.info("***************** FIN - Test_001_Login ****************")
         # self.driver.close()
-
+        
     "______-----_____"   
     @pytest.mark.mesTests
     def test_souscription(self, setup_3):
+        self.logger.info("***************** DEBUT - Test_SOUSCRIPTION_NEW_USER ***************")
         #fais appel à une fonction qui genère un email et mdp randoom pour créer un compte 6play 
         #rentre ces ID dans le fichier 
         "Generation des email"
@@ -167,4 +169,5 @@ class Test_001_Login:
             print("L'email récupéré correspond à celui utilisé lors de la souscription de compte")
             assert True
         time.sleep(5)
+        self.logger.info("***************** FIN - Test_SOUSCRIPTION_NEW_USER ***************")
 

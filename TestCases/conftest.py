@@ -1,3 +1,7 @@
+"""
+Objectif : De rassembler tous les bout de code/step reutilisés plusieurs fois
+Dernière mise à jour importante : 10/03/2022
+"""
 
 from random import random
 from selenium import webdriver
@@ -38,7 +42,7 @@ def setup_2():
     driver.maximize_window()
     return driver
 
-"La commande pour lancer le test selon le browser : "
+# Un setup pour lancer le driver avec le browser souhaité : 
 @pytest.fixture
 def setup(browser):
     if browser == "chrome":
@@ -62,11 +66,10 @@ def pytest_addoption(parser):   #this will ger rhe value from CLI/hooks
 def browser(request):  #this will return the browser value to setup method
     return request.config.getoption("--browser")
 
+
 ##################### Pytest HTML Report ########################
 
 "Ceci est UNIQUEMENT des paramètrages dans le rapport d'exécution HTML"
-#pytest -v -s TestCases/test_IDenBoucle.py -n=2 --html=Reports/reports.html 
-
 "It is hook for adding environment info to HTML Reports"
 def pytest_configure(config):
     config._metadata['Project Name'] = '6 play'
