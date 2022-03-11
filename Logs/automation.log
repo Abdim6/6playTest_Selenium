@@ -121,3 +121,23 @@
 03/10/2022 11:21:13 AM: INFO: ***************** FIN - Test_001_Login ****************
 03/10/2022 11:21:15 AM: INFO: ***************** DEBUT - Test_SOUSCRIPTION_NEW_USER ***************
 03/10/2022 11:21:27 AM: INFO: ***************** FIN - Test_SOUSCRIPTION_NEW_USER ***************
+03/11/2022 04:15:28 PM: INFO: ***************** DEBUT - Test_001_Login ****************
+03/11/2022 04:15:28 PM: INFO: ***************** vérification du titre de la page d'accueil ****************
+03/11/2022 04:15:28 PM: INFO: ***************** DEBUT - Test_001_Login ****************
+03/11/2022 04:15:28 PM: INFO: ***************** vérification du titre de la page d'accueil ****************
+03/11/2022 04:15:28 PM: INFO: ***************** DEBUT - Test_002_Login ****************
+03/11/2022 04:15:28 PM: INFO: ***************** vérification du titre de la page d'accueil ****************
+03/11/2022 04:15:47 PM: INFO: ***************** Pass OK ****************
+03/11/2022 04:16:00 PM: INFO: ***************** Pass OK - FAUX COMPTE ****************
+03/11/2022 04:16:13 PM: INFO: ***************** Pass OK ****************
+03/11/2022 04:16:26 PM: INFO: ***************** Pass OK ****************
+03/11/2022 04:16:30 PM: INFO: ***************** FIN - Test_001_Login ****************
+03/11/2022 04:16:32 PM: INFO: ***************** DEBUT - Test_SOUSCRIPTION_NEW_USER ***************
+03/11/2022 04:16:44 PM: INFO: ***************** FIN - Test_SOUSCRIPTION_NEW_USER ***************
+03/11/2022 04:16:45 PM: INFO: ***************** DEBUT - Test_001_Login ****************
+03/11/2022 04:16:45 PM: INFO: ***************** vérification du titre de la page d'accueil ****************
+03/11/2022 04:16:49 PM: INFO: ***************** Test titre de la page OK ****************
+03/11/2022 04:17:03 PM: INFO: ***************** FIN - Test_001_Login ****************
+03/11/2022 04:17:57 PM: INFO: ***************** Test titre de la page OK ****************
+03/11/2022 04:18:00 PM: INFO: ***************** FIN - Test_001_Login ****************
+03/11/2022 04:18:04 PM: INFO: ***************** Test titre de la page OK ****************

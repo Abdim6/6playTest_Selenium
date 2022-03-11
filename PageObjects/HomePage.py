@@ -1,6 +1,9 @@
 "Ce fichier a pour objectif de localiser les objets de la home page + la modale TCF"
 "& une classe qui permetra d'éffectuer la connexion"
 "!!! AVEC UNE CONNEXION EN BOUCLE LOCALISATION AVEC XML FONCTIONNE !!! "
+# auteur 
+# dernier date de modif
+
 
 import imp
 from selenium import webdriver
@@ -83,5 +86,4 @@ class HomePage:
         btn_ajouter = self.driver.find_elements(By.CLASS_NAME, "oxwymj-0.jtrbaw.sc-1qpa8kx-4.eOyIfE.is-secondary.is-responsive")
         btn_ajouter[0].click()
         # self.driver.find_element(By.CSS_SELECTOR, self.AjoutFavoris_btn_CSS).click()
-       
-
+    
